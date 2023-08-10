@@ -6,65 +6,51 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-  <div>
-    <div>
-      <div><h2>Jane Doe</h2></div>
-      <nav>
-      <div id="nav">
-        <div>About Me</div>
-        <div>Contact</div>
-        <div>Skillset</div>
+      <h1>Jane Doe</h1>
+        <nav id="nav">
+        <p>About Me</p>
+        <p>Contact</p>
+        <p>Skillset</p>
       </nav>
-      </div>
-    </div>
-   <main>
-    <div>
-      <div id="about-me">
-        <div><h4>About me</h4></div>
-        <div>
+   
+    <main>
+      <section id="about-me">
+        <h4>About me</h4>
+        
           Hi there! Welcome to my personal website. Here is gathered the most
           important information about me. If you want to work with me or get to
           know me, please don't hesitate to get in contact.
-        </div> </main>
-        <!--What element could be used to combine an image with a descriptive caption?-->
-        <figure>
-        <div>
-          <img
-            src="https://source.unsplash.com/random/400x300?fruit"
-            alt="a random picture"
-          /><figcaption>a random picture</figcaption>
-          </figure>
-          <div>
-            A random picture, because I would like to maintain my privacy and
-            let my code speak for me, instead of images.
-          </div>
-        </div>
-      </div>
+      </section> </main>
 
-      <div id="contact">
-        <div><h4>Contact</h4></div>
-        <!--When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working?-->
+
+      <section>
+        <figure>
+          <img src="https://source.unsplash.com/random/400x300?fruit" alt="a random picture"/>
+            <figcaption>A random picture, because I would like to maintain my privacy and
+            let my code speak for me, instead of images.
+            </figcaption>
+          </figure>
+      </section>
+
+      <section id="contact">
+        <h4>Contact</h4>
         <a href="https://github.com/neuefische">GitHub</a>
         <br>
         <a href="https://de.linkedin.com/">LinkedIn</a>
         <br>
         <a href="https://codesandbox.io/">CodeSandbox</a>
-      </div>
+      </section>
 
-      <div id="skills">
-        <div><h4>Skillset</h4></div>
-        <!--This part could use some bulletpoint to be more structured-->
-        <div>
+      <section id="skills">
+        <h4>Skillset</h4>
           <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Painting rainbows</li>
-          <li>Party</li></ul>
-        </div>
-      </div>
-    </div>
-  </div>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Painting rainbows</li>
+            <li>Party</li>
+          </ul>
+      </section>
 </body>
 </html>
