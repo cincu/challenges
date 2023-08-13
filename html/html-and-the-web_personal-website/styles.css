@@ -1,4 +1,90 @@
-hr {
-    height: 1px;
-    margin: 1px 0;
-    width:50% }
+:root {
+    --primary-color: rgba(65, 0, 157, 0.851);
+    --text-color: rgb(173, 255, 47);
+    --second-color: rgb(189, 189, 189);
+}
+/* 2 */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Courier New', Courier, monospace;   
+    font-size: 14px;
+    line-height: 30px;
+    background-color: rgb(107, 105, 105);
+}
+head {
+    margin: 0px;
+    padding: 0px;
+}
+.highlighter {
+    box-sizing: border-box;
+    height: 60px;
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 220px;
+    z-index: -1;
+    cursor: crosshair; /* why not work here*/
+    /* 0 */
+}
+button {
+    cursor: crosshair;
+}
+
+nav {
+    position: fixed;
+margin-left: 100px;    /*1 */
+}
+nav li {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+    color: var(--second-color);
+}
+
+h1,h3 {
+    color: var(--text-color);
+}
+
+img {
+    width: 250px;
+    z-index: -2;
+    position: relative;
+
+}
+
+li /*3 :no(li.nav) */ ,td, tr {
+    color: var(--second-color);
+    list-style-type: none;
+}
+
+.seperator {
+    height: 2px;
+    border-radius: 10px;
+    background-color:  rgb(107, 105, 105);
+    position: relative;
+    margin: 30px 600px 30px 80px;
+    display: flex;
+    box-shadow: 1px 1px 5px 1px var(--primary-color);
+}
+
+section {
+    margin-left: 80px;
+}
+.end {
+    height: 150px;
+}
+a[href] {
+    color: var(--text-color);
+}
+a:hover {
+    background-color: var(--primary-color);
+}
+footer {
+    position: fixed;
+    bottom: 5px;
+    left: 45%;
+    color: var(--text-color);
+}
+footer:hover{
+    color:  rgb(107, 105, 105);
+}
