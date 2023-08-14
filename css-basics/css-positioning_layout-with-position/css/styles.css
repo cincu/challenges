@@ -22,6 +22,9 @@ body {
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header__text {
@@ -41,6 +44,8 @@ body {
   background: #140523;
   color: #ffffff;
   height: 48px;
+  position: sticky;
+  bottom: 0;
 }
 
 /**
@@ -53,10 +58,16 @@ body {
   padding: 3% 10%;
   scroll-margin-top: 100px;
   border-radius: 2rem;
+  position: relative;
+  
 }
+
+/* do u need to set the children to absolute  */
+
 
 .card__heading {
   margin: 0 0 10px 0;
+  
 }
 
 /**
@@ -68,12 +79,16 @@ body {
   padding: 6px 12px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 /**
  * The go-to-top button should cover all other elements, so that it is always visible, and
  * unaffected when the document is scrolled.
  */
+
 .goto-top {
   width: 48px;
   height: 48px;
@@ -87,4 +102,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
+  position: sticky;
+  bottom: 50px;
 }
