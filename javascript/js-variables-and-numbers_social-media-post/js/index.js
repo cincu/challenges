@@ -9,7 +9,13 @@ console.clear();
 	- a boolean called isReported
 */
 
+
 // --v-- write your code here --v--
+const sampleTitle = 'Hello World--';
+const sampleText = 'Today, we start learning JavaScript';
+let numberOfLikes = 132;
+let userName = null;
+const isReported = true;
 
 // --^-- write your code here --^--
 
@@ -18,5 +24,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+
+console.log(sampleTitle + sampleText + 'number of likes: ' + numberOfLikes + '.post by: ' + userName + isReported);
+
+numberOfLikes++;
+
+console.log(sampleTitle + sampleText + 'number of likes: ' + numberOfLikes + 'post by: ' + userName + isReported);
 
 // --^-- write your code here --^--
