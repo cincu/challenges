@@ -9,6 +9,8 @@ body {
   font-family: system-ui;
 }
 
+
+
 /* 
 - Use grid-template areas to place the images as shown in the challenges file
 - Assign an area to each image
@@ -17,9 +19,14 @@ body {
 .image-board__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 200px 300px;
+  grid-template-rows: 200px 200px 300px;
   gap: 1rem;
   padding: 1rem;
+  grid-template-areas: 
+    "bb cc ee"
+    "aa cc ff"
+    "aa dd ff";
+    
   /* Add styles here */
 }
 
@@ -32,25 +39,20 @@ body {
 }
 
 .image-board__image--1 {
-  /* Add styles here */
+  grid-area: aa;
 }
-
 .image-board__image--2 {
-  /* Add styles here */
+  grid-area: bb;
 }
-
 .image-board__image--3 {
-  /* Add styles here */
+  grid-area: cc;
 }
-
 .image-board__image--4 {
-  /* Add styles here */
+  grid-area: dd;
 }
-
 .image-board__image--5 {
-  /* Add styles here */
+  grid-area: ee;
 }
-
 .image-board__image--6 {
-  /* Add styles here */
+  grid-area: ff;
 }
