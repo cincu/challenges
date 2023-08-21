@@ -9,8 +9,8 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-let bookTitle = 'The Stranger'
-let bookAuthor = 'Albert Camus'
+const bookTitle = 'The Stranger'
+const bookAuthor = 'Albert Camus'
 let bookRating = '4/5'
 let bookSales = '6 million'
 // --^-- write your code here --^--
@@ -47,10 +47,10 @@ logBookData();
  - Now increase the number of sales 2 more times and log the data after each increase.
 */
 function logBookData() {
-  console.log('Title: ' + bookTitle)
-  console.log('Author: ' + bookAuthor)
-  console.log('Rating: ' + bookRating)
-  console.log('Sales: ' + bookSales)
+  console.log('Title: ' + bookTitle);
+  console.log('Author: ' + bookAuthor);
+  console.log('Rating: ' + bookRating);
+  console.log('Sales: ' + bookSales);
 };
 
 bookRating = '4/5'
