@@ -23,3 +23,16 @@ p {
   height: 200px;
   background: hsl(0, 70%, 60%);
 }
+
+.blue {
+  background-color: blue;
+}
+
+.border {
+  border-radius: 100px;
+}
+
+.rotate {
+  rotate: 20px;
+  deg: 15px;
+}
