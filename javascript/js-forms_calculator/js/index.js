@@ -20,13 +20,27 @@ function divide(a, b) {
 }
 
 form.addEventListener("submit", (event) => {
+  
   event.preventDefault();
-
   let result;
+  const addButton = document.getElementById("addition").checked;
+  const subButton = document.getElementById("subtraction").checked;
+  const mulButton = document.getElementById("multiplication").checked;
+  const divButton = document.getElementById("division").checked;
 
-  // --v-- write your code here --v--
+  const numberA = Number(event.target.elements.numberA.value)
+  const numberB = Number(event.target.elements.numberB.value)
 
-  // --^-- write your code here --^--
+  if (addButton) {
+   result = add(numberA, numberB);
+  } else if (subButton) {
+    result = subtract(numberA, numberB);
+  } else if (mulButton) {
+    result = multiply(numberA, numberB);
+  } else if (divButton) {
+    result = divide(numberA, numberB);
+  };
+  
+  return resultOutput.textContent = result;
 
-  resultOutput.textContent = result;
 });
