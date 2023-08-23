@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const bookTitle = 'The Stranger'
+const bookAuthor = 'Albert Camus'
+let bookRating = '4/5'
+let bookSales = '6 million'
 // --^-- write your code here --^--
 
 /*
@@ -25,7 +28,15 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+console.log('Title: ' + bookTitle);
+console.log('Author: ' + bookAuthor);
+console.log('Rating: ' + bookRating);
+console.log('Sales: ' + bookSales);
 
+let bookRating = '4,5/5'
+let bookSales = '7 million'
+
+logBookData();
 // --^-- write your code here --^--
 
 /*
@@ -35,7 +46,27 @@ Then log all variables to the console again.
  - Then replace the console logs above with this function.
  - Now increase the number of sales 2 more times and log the data after each increase.
 */
+function logBookData() {
+  console.log('Title: ' + bookTitle);
+  console.log('Author: ' + bookAuthor);
+  console.log('Rating: ' + bookRating);
+  console.log('Sales: ' + bookSales);
+};
 
+bookRating = '4/5'
+bookSales = '6,5 million'
+
+function logBookData() {
+  console.log('Title: ' + bookTitle)
+  console.log('Author: ' + bookAuthor)
+  console.log('Rating: ' + bookRating)
+  console.log('Sales: ' + bookSales)
+};
+
+logBookData();
+bookSales = '7,5 million'
+
+logBookData();
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
