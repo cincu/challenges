@@ -39,7 +39,7 @@ const allCardsWithTagsHTMLOrJSThatAreBookmarked =
 cards.filter((card) => {
   return (card.isBookmarked &&  
     card.tags.filter((tag) => {
-      return tag == 'html' || tag =='js'
+      return card.tags.includes == 'html' || card.tags.includes =='js'
     })
   )
 });
