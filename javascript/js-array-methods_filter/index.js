@@ -37,9 +37,7 @@ const allCardsThatAreNotBookmarked = cards.filter((card) => {
 
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = 
 cards.filter((card) => {
-  return (card.isBookmarked &&  
-    card.tags.filter((tag) => {
-      return card.tags.includes == 'html' || card.tags.includes =='js'
+      return (card.tags.includes('html') || card.tags.includes('js')) && card.isBookmarked
     })
   )
 });
