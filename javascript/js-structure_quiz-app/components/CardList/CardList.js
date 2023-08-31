@@ -1,5 +1,6 @@
+import { Card } from "../Card/Card.js";
 
-export const cards = [
+const cards = [
     {
       question:
         "In the Kingdom Hearts series who provides the english voice for Master Eraqus?",
@@ -22,3 +23,17 @@ export const cards = [
       isBookmarked: false,
     },
   ];
+
+
+export function CardList() {
+    const cardList = document.createElement("section");
+    cardList.classList.add("card-list");
+  
+    cards.forEach((card) => {
+      const cardElement = Card(card);
+      cardList.append(cardElement);
+    });
+  
+    return cardList;
+  }
+  
