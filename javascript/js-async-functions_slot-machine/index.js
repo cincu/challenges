@@ -22,6 +22,14 @@ root.append(machine, spinButton, result);
 //                                      ↙️
 spinButton.addEventListener("click", async () => {
   spinButton.disabled = true;
+  wheel1.spin();
+  wheel2.spin();
+  wheel3.spin();
+  
+async function myAsyncClickFunction() {
+  
+}
+
   /**
    * Hint 1:
    * The wheel elements have a spin method that returns a promise.
