@@ -16,7 +16,7 @@ async function fetchData() {
         } else {
             console.log('fetch works!');
             //bonus :
-            console.log(jsonObj.results[2])
+            console.log(jsonObj.results[2].eye_color)
             return jsonObj;
         } 
     } catch (error) {
