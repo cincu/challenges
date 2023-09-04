@@ -1,4 +1,5 @@
 // --^-- your code here --^--
+
 export function Card(characterData) {
   const card = document.createElement("article"); // Create a new article Element
   card.classList.add("card"); // Add the class 'card'
