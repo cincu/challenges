@@ -59,40 +59,19 @@ test('getNameAndAge() returns an array of formatted strings like this: "Skywalke
 });
 
 test("getPeopleByAge() returns an array of people of a certain age", () => {
-  const result = getPeopleByAge(people, age)
+  const result = getPeopleByAge(people, 21)
   expect(result).toEqual([{
     id: 1,
     firstName: "Jane",
     lastName: "Doe",
     age: 21,
   },
-  {
-    id: 2,
-    firstName: "John",
-    lastName: "Doe",
-    age: 18,
-  },
-  {
-    id: 3,
-    firstName: "Max",
-    lastName: "Mustermann",
-    age: 32,
-  },
-  {
-    id: 4,
-    firstName: "Erika",
-    lastName: "Musterfrau",
-    age: 38,
-  },
-  {
-    id: 5,
-    firstName: "Luke",
-    lastName: "Skywalker",
-    age: 23,
-  },])
-});
+])
+})
 
-test('getPeopleNamesOlderThan() returns an array of people full names older than a certain age, e.g. "Luke Skywalker"', () => {});
+test('getPeopleNamesOlderThan() returns an array of people full names older than a certain age, e.g. "Luke Skywalker"', () => {
+  
+});
 
 test("getPeopleByLastName() returns an array of people of a certain lastName", () => {});
 
