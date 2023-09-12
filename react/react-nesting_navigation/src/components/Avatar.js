@@ -1,5 +1,6 @@
-import { Image } from "./components/Image";
+import { Image } from "./Image";
+import avatar from "../img/avatar.jpg";
 
-export function Avatar({ avatar }) {
-  return <Image className="round-image" src={avatar} alt="avatar" />;
+export function Avatar() {
+  return <Image src={avatar} alt="avatar" />;
 }

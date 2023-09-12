@@ -1,10 +1,6 @@
-import { Link } from "./Link";
 import { Image } from "./Image";
+import logo from "../img/logo.jpg";
 
-export function Logo({ src }) {
-  return (
-    <Link href="#">
-      <Image className="round-image" src={src} alt="logo" />
-    </Link>
-  );
+export function Logo() {
+  return <Image src={logo} alt="logo" />;
 }
