@@ -97,3 +97,13 @@ button {
   display: flex;
   gap: 32px;
 }
+
+/* footer */
+
+.footer__title {
+  font-size: 2rem;
+}
+.footer {
+  display: flex;
+  background-color: #535bf2;
+}

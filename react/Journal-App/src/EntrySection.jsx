@@ -1,6 +1,7 @@
 import { Tabs } from "./Tabs";
 import { Tab } from "./Tab";
 import { Badge } from "./Badge";
+import { Entry } from "./Entry";
 
 export function EntrySection() {
   return (
@@ -9,16 +10,16 @@ export function EntrySection() {
         <Tab active>
           All Entries <Badge isActive>3</Badge>
         </Tab>
+        <Tab>
+          Favorites <Badge>1</Badge>
+        </Tab>
       </Tabs>
+      <div className="entry--section__entries">
+        <Entry motto="hello" text="blabla" date="27.02.1993" />
+        <Entry motto="hello" text="blabla" date="27.02.1993" />
+        <Entry motto="hello" text="blabla" date="27.02.1993" />
+        <Entry motto="hello" text="blabla" date="27.02.1993" />
+      </div>
     </section>
   );
 }
-
-//2.2 entries section
-//2.2.1 tab bar
-//2.2.1.1tab
-//badge with number of entries
-//2.2.1.2tab
-//badge with number of entries
-//2.2.2 entry list
-//entry with {title}{date}{text}{icon-button}
