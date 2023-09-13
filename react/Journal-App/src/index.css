@@ -22,10 +22,6 @@ a:hover {
   color: #535bf2;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 /* 
 button:focus,
 button:focus-visible {
@@ -45,9 +41,59 @@ button:focus-visible {
   }
 } */
 .header {
-  background-color: grey;
-  color: black;
+  background-color: blue;
   top: 0;
+  display: fixed;
+  height: 5rem;
+}
+
+.header__title {
+  color: rgb(253, 172, 172);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+}
+.header__semi {
+  color: rgb(253, 172, 172);
+}
+
+.entry-form__fields {
+  display: flex;
+  flex-direction: column;
+}
+.entry-form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.button:hover {
+  background-color: blue;
+}
+label {
+  padding: 0.5rem;
+}
+button {
+  margin: 2rem;
+}
+
+/* badge */
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background-color: var(--color-water-10);
+  color: var(--color-granite);
+  font-weight: 400;
+}
+
+.badge--active {
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
+}
+
+/* tabs */
+.tabs {
   width: 100%;
-  position: fixed;
+  display: flex;
+  gap: 32px;
 }
