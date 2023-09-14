@@ -1,4 +1,4 @@
-import { FavButton } from "./FavButton";
+// import { FavButton } from "./FavButton";
 export function Entry({ motto, date, text }) {
   return (
     <article>
@@ -9,7 +9,7 @@ export function Entry({ motto, date, text }) {
             <q>{motto}</q>
           </h2>
           <p className="entry--text">{text}</p>
-          <FavButton />
+          {/* <FavButton /> */}
         </div>
       </div>
     </article>
