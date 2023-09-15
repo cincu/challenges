@@ -1,18 +1,21 @@
 import React from "react";
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
-  let code = "?";
+  const [sequence, setSequence] = useState("");
 
-  const validCode = "🐡🐠🐋";
-
+  const validSequence = "🐡🐠🐋";
+  const handleClick = (fish) => {
+    setSequence(sequence + fish);
+  };
   return (
     <div className="container">
       <div className="button-container">
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐡");
           }}
         >
           <span role="img" aria-label="Pufferfish">
@@ -22,7 +25,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐋");
           }}
         >
           <span role="img" aria-label="Whale">
@@ -32,7 +35,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐠");
           }}
         >
           <span role="img" aria-label="Clownfish">
@@ -44,14 +47,14 @@ export default function App() {
       <button
         type="button"
         onClick={() => {
-          console.log("Reset Code!");
+          setSequence("");
         }}
       >
         Reset
       </button>
-      <h2>{code}</h2>
-
-      {code === validCode && <p>Valid code!</p>}
+      <h2>{sequence.length ? sequence : "?"}</h2>
+      {/* expressing condition */}
+      {sequence === validSequence && <p>Valid code!</p>}
     </div>
   );
 }
