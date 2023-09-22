@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const data = { email, password };
 
-    // try {
+    try {
     const response = await fetch("/login", {
       //post method
       method: "POST",
       headers: {
-        "Content-Type": "applicaton/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     });
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //error page redirect
       window.location.href = "/error";
     }
-    // } catch (error) {
+    } catch (error) {
     //   console.log("Error:", error);
     // }
   });
