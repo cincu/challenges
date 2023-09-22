@@ -33,11 +33,11 @@ app.get("/login", function (req, res) {
   res.sendFile(path.join(__dirname, "./public/login.html"));
 });
 //WHY IS THERE PATH.JOIN???
-app.post("login", (req, res) => {
+app.post("/login", (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) {
     res.json({ success: false });
-  } else if (email === "username@email.com" && password === "very-secret") {
+  } else if (email === "username@email.com" && password === "secret") {
     res.json({ success: true });
   } else {
     res.json({ success: false });

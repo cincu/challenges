@@ -8,26 +8,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const data = { email, password };
 
-    try {
-      const response = await fetch("/login", {
-        //i don't understand this part so much ::
-        method: "POST",
-        headers: {
-          "Content-Type": "applicaton/json",
-        },
-        body: JSON.stringify(data),
-      });
-      const result = await response.json();
-      if (result.success) {
-        // Redirect to the My Account page
-        window.location.href = "/my=account";
-      } else {
-        // Redirect to the Error page
-
-        window.location.href = "/error";
-      }
-    } catch (error) {
-      console.log("Error:", error);
+    // try {
+    const response = await fetch("/login", {
+      //post method
+      method: "POST",
+      headers: {
+        "Content-Type": "applicaton/json",
+      },
+      body: JSON.stringify(data),
+    });
+    const result = await response.json();
+    console.log(result);
+    if (result.success) {
+      //account page redirect
+      window.location.href = "/my-account";
+    } else {
+      //error page redirect
+      window.location.href = "/error";
     }
+    // } catch (error) {
+    //   console.log("Error:", error);
+    // }
   });
 });
