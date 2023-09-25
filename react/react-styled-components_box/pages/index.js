@@ -2,9 +2,13 @@ import BoxWithClassName from "../components/BoxWithClassName/BoxWithClassName.js
 
 export default function HomePage() {
   return (
-    <div>
+    <Container>
       <BoxWithClassName />
       <BoxWithClassName isBlack />
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+`;
