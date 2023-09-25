@@ -14,3 +14,4 @@ test("renders with two links 'Play' and 'History'", () => {
   const historyAnchor = screen.getByRole("link", { name: "History" });
   expect(historyAnchor).toBeInTheDocument();
 });
+// getAllByRole

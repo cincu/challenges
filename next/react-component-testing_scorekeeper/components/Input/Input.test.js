@@ -34,8 +34,9 @@ test("calls callback on every user input", async () => {
   const playerInput = screen.getByRole("StyledInput", {
     name: /playerNames/i,
   });
-  await user.click(gameInput);
-  await user.click(playerInput);
+  await user.type(gameInput, "abc");
+  await user.type(playerInput, "abc");
+  getByLabelText;
 
   expect(onChange).toHaveBeenCalledTimes(1);
 });
