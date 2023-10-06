@@ -17,7 +17,7 @@ export default function Product() {
   return (
     <ul>
       {products.map((product) => (
-        <li key={product.id}>{product.name}</li>
+        <h2 key={product.id}>{product.name}</h2>
       ))}
     </ul>
   );
