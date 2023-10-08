@@ -1,10 +1,15 @@
+import { useLightsStore } from "@/stores/useLightsStore";
 import Link from "../components/Link";
 
 export default function HomePage() {
+  const numOfSwitchedOnLights = useLightsStore(
+    (state) => state.numOfSwitchedOnLights
+  );
+
   return (
     <div>
       <h1>Home</h1>
-      <p>?? light(s) are on.</p>
+      <p>{numOfSwitchedOnLights()} light(s) are on.</p>
       <p>
         <Link href="/lights">All lights →</Link>
       </p>
