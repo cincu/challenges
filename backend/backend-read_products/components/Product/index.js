@@ -20,10 +20,11 @@ export default function Product() {
   return (
     <ProductCard>
       <h2>{data.name}</h2>
-      <p>Description: {data.description}</p>
+      <p>Description: {data.description}</p>s
       <p>
         Price: {data.price} {data.currency}
       </p>
+      <p>Reviews: {data.reviews}</p>
       <StyledLink href="/">Back to all</StyledLink>
     </ProductCard>
   );
