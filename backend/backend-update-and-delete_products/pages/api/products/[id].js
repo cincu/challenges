@@ -11,7 +11,15 @@ export default async function handler(request, response) {
     if (!product) {
       return response.status(404).json({ status: "Not Found" });
     }
-
+    if (request.method === "PUT") {
+      const updatedProduct = await Product.findByIdAndUpdate(
+        id,
+        updatedProduct
+      );
+      return response
+        .status(200)
+        .json({ status: "Product successfully updated." });
+    }
     response.status(200).json(product);
   }
 }
